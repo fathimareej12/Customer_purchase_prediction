@@ -22,5 +22,5 @@ if __name__=='__main__':
     print(data.columns)
     print(data.describe())
     print(data.describe(include='O'))
-
+    print(data.info())
 

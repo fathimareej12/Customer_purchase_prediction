@@ -1,4 +1,5 @@
 from components.data_ingestion import load_data
+from components.data_validation import dataset_check
 
 
 
@@ -11,9 +12,7 @@ from components.data_ingestion import load_data
 
 def main():
     data = load_data()
-    print('Top 5 values:')
-    print(data.head(5))
-
+    dataset_check(data)
 
 
 

@@ -1,4 +1,5 @@
 import pandas as pd
+from src.config.paths import DATA_PATH
 def load_data():
     '''
     loads data from csv
@@ -6,7 +7,7 @@ def load_data():
     '''
 
 
-    data = pd.read_csv('Data/Raw Data/customer_purchase_prediction.csv')
+    data = pd.read_csv(DATA_PATH/'customer_purchase_prediction.csv')
 
     return data
 

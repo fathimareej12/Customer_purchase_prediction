@@ -1,6 +1,6 @@
 import pandas as pd
 from components.data_ingestion import load_data
-
+from components.visualization import create_visuals
 
 def dataset_check(data: pd.DataFrame):
     '''
@@ -22,9 +22,19 @@ def dataset_check(data: pd.DataFrame):
     print('\n Duplicated values in dataframe\n')
     print(data.duplicated().sum())
 
+    print('\n Mean of annual income \n')
+    print(data['annual_income'].mean)
+
+    data = data[data['annual_income'] <= 200000]
+    print('filtered shape:', data.shape)
+
+    return data
+
 def main():
       data = load_data()
-      dataset_check(data)
+      data=dataset_check(data)
+      create_visuals(data)
+
 
 if __name__ == '__main__':
     main()

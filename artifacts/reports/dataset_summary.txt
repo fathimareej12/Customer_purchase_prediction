@@ -1,0 +1,72 @@
+           
+ Exploratory data analysis            
+==================================================
+ Dataset shape: (14963, 23)
+ Target variable Distribution 
+purchase_label
+Likely to purchase      11209
+Unlikely to purchase     3754
+Name: count, dtype: int64
+ traffic source distributiontraffic_source
+Organic Search    3690
+Social Media      2985
+Direct            2725
+Paid Ads          2560
+Email             1991
+Referral          1012
+Name: count, dtype: int64
+ Age Distributionage
+18    984
+34    563
+35    556
+32    549
+37    539
+38    537
+36    516
+31    506
+33    503
+29    502
+30    491
+40    487
+39    474
+41    466
+42    448
+28    445
+43    417
+27    402
+44    375
+25    361
+26    355
+45    354
+24    343
+46    330
+47    299
+22    283
+23    277
+49    269
+48    265
+21    231
+20    228
+19    202
+51    198
+50    196
+52    174
+53    139
+54    126
+55    109
+56     92
+57     69
+58     65
+59     58
+61     31
+60     31
+62     26
+64     19
+63     19
+65     16
+70     12
+67     10
+66     10
+68      4
+69      2
+Name: count, dtype: int64

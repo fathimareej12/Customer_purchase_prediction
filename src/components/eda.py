@@ -1,8 +1,9 @@
 import pandas as pd
 import os
+from src.config.paths import REPORTS_PATH
 
-Artifacts_path="../artifacts/reports"
-os.makedirs(Artifacts_path,exist_ok=True)
+
+os.makedirs(REPORTS_PATH,exist_ok=True)
 
 def basic_eda(data:pd.DataFrame):
     print('Exploratory data analysis'.center(50))
@@ -23,11 +24,10 @@ def basic_eda(data:pd.DataFrame):
 
     print(pd.crosstab(data['product_category'], data['purchase_label']))
 
-    with open('dataset_summary.txt', 'w') as file:
-        print('\n Started \n')
+    with open(REPORTS_PATH/'dataset_summary.txt', 'w') as file:
+
         file.write('\n Exploratory data analysis'.center(50))
         file.write('\n' +'=' * 50)
-        print('\n Mid \n')
         file.write(f'\n Dataset shape: {data.shape}')
         file.write('\n Target variable Distribution \n')
         file.write(str(data['purchase_label'].value_counts()))

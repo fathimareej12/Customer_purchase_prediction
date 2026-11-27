@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from src.config.paths import REPORTS_PATH
+from config.paths import REPORTS_PATH
 
 
 os.makedirs(REPORTS_PATH,exist_ok=True)

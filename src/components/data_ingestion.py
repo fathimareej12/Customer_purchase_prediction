@@ -1,5 +1,5 @@
 import pandas as pd
-from src.config.paths import DATA_PATH
+from config.paths import DATA_PATH
 def load_data():
     '''
     loads data from csv

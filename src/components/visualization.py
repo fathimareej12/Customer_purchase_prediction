@@ -1,7 +1,7 @@
 import os
 import matplotlib.pyplot as plt
 import pandas as pd
-from src.config.paths import CHART_PATH
+from config.paths import CHART_PATH
 
 
 def save_bar(series,title,filename,xlabel='',ylabel='count'):

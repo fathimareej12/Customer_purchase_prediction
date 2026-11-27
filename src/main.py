@@ -1,0 +1,21 @@
+from components.data_ingestion import load_data
+from components.data_validation import dataset_check
+from components.eda import basic_eda
+from components.visualization import create_visuals
+from components.feature_engineering import features
+from components.transform import classify_features
+
+def main():
+    data=load_data()
+    dataset_check(data)
+    basic_eda(data)
+    create_visuals(data)
+    num,cat,tar=classify_features(data)
+    print(num,cat,tar)
+
+
+
+
+
+if __name__=='__main__':
+    main()
